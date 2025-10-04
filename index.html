@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J&J Business OÜ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #2a2a2a;
+      padding: 20px 40px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 10% 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left, .right {
+      flex: 1;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1675627453057-c56dc0502ffd?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero::after, .contact::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .hero-content, .contact-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+
+    .image-right, .image-full {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .services, .benefits, .process {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .item {
+      margin-bottom: 40px;
+    }
+
+    .item h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      background: url('https://images.unsplash.com/photo-1675627453057-c56dc0502ffd?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .contact-content {
+      max-width: 600px;
+    }
+
+    .contact p, .contact h2 {
+      font-size: 1.5rem;
+    }
+
+    @media(max-width: 1000px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      .image-right {
+        margin-top: 30px;
+        height: 300px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#hero">Avaleht</a>
+    <a href="#about">Kes Me Oleme</a>
+    <a href="#services">Meie Teenused</a>
+    <a href="#benefits">Miks Meie</a>
+    <a href="#process">Tööprotsess</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content left">
+      <h1>J&J Business OÜ</h1>
+      <p>Meie eesmärk on aidata ettevõtetel kasvada, areneda ja jõuda uute kõrgusteni strateegilise juhtimise ja turundusnõustamise kaudu. Teeme keerulise lihtsaks ja juhime Teie ärisuuna selgelt ja tulemuslikult.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="left">
+      <h2>Meie Lugu</h2>
+      <p>J&J Business OÜ on asutatud eesmärgiga pakkuda professionaalset juhtimisnõustamist, ärialast strateegilist toetust ja turunduslahendusi. Meie meeskond koosneb kogenud spetsialistidest, kellel on pikaajaline kogemus erinevates tööstusharudes. Me usume, et iga ettevõte väärib selget visiooni ja toetavat partnerit oma arenguteel.</p>
+    </div>
+    <div class="image-right" style="background-image: url('https://plus.unsplash.com/premium_photo-1664477069446-3876da9684d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG9mZmljZSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D');"></div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="services">
+      <h2>Meie Teenused</h2>
+      <div class="item">
+        <h3>Juhtimisnõustamine</h3>
+        <p>Aitame luua tõhusa juhtimismudeli, mille abil saavutate parema organisatsiooni toimimise ja strateegilise suuna.</p>
+      </div>
+      <div class="item">
+        <h3>Ärinõustamine</h3>
+        <p>Pakume lahendusi ärimudelite optimeerimiseks, finantsanalüüsiks ja kasvuplaneerimiseks konkurentsitihedal turul.</p>
+      </div>
+      <div class="item">
+        <h3>Turundusstrateegiad</h3>
+        <p>Loome personaalseid turunduslahendusi, mis toovad Teie brändi sihtrühmale lähemale ning suurendavad nähtavust.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits">
+    <div class="benefits">
+      <h2>Miks valida J&J?</h2>
+      <div class="item">
+        <h3>Personaalsus</h3>
+        <p>Iga klient saab ainulaadse lähenemise vastavalt oma vajadustele ja eesmärkidele.</p>
+      </div>
+      <div class="item">
+        <h3>Kogemus ja pädevus</h3>
+        <p>Meie meeskonnal on aastatepikkune kogemus ja sügav arusaam turu dünaamikast.</p>
+      </div>
+      <div class="item">
+        <h3>Tulemusele suunatud</h3>
+        <p>Fookus on alati reaalsel väärtusel ja mõõdetavatel tulemustel Teie ettevõttele.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <div class="process">
+      <h2>Meie Koostööprotsess</h2>
+      <div class="item">
+        <h3>1. Konsultatsioon</h3>
+        <p>Selgitame välja Teie eesmärgid ja väljakutsed ning kaardistame võimalused.</p>
+      </div>
+      <div class="item">
+        <h3>2. Lahenduse väljatöötamine</h3>
+        <p>Koostame strateegia ja tegevuskava, mis sobib just Teie ettevõttele.</p>
+      </div>
+      <div class="item">
+        <h3>3. Tulemuste elluviimine</h3>
+        <p>Teostame plaani ja jälgime tulemusi, et tagada maksimaalne mõju ja areng.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <h2>Võtke meiega ühendust</h2>
+      <p>Kui otsite partnerit, kes mõistab Teie äri ja aitab jõuda järgmisele tasemele – siis olete õiges kohas. Kirjutage meile julgelt!</p>
+      <br>
+      <p><strong>Aadress:</strong> Koidu tn 42-10, Kunda 44108</p>
+      <p><strong>E-post:</strong> <a href="mailto:team@jjbusiness.services" style="color:#fff;">team@jjbusiness.services</a></p>
+    </div>
+  </section>
+
+</body>
+</html>
